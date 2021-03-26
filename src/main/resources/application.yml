@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  redis:
+    cluster:
+      max-redirects: 3
+      nodes:
+        - redis1.cache.svr:7379
+        - redis2.cache.svr:7380
+        - redis3.cache.svr:7381
+        - redis1.cache.svr:8379
+        - redis2.cache.svr:8380
+        - redis3.cache.svr:8381
